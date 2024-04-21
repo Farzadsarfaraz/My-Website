@@ -33,14 +33,13 @@ header{
     height: 100vh;
 }
 header .container{
-    max-width: 100%; 
-    margin-left: 150px;
+    display: flex;
+
     }
 header img{
-    height: 30vw;
-    width: 30vw;
-    margin-bottom:130px;
-    margin-left: 10px;
+    height: 20vw;
+    width: 20vw;
+    margin: 210px 44px;
     box-shadow: red 1px 1px 10px;
     border-radius: 60%;
     transition: 0.3s;
@@ -84,7 +83,6 @@ header .read-more{
     transition:1000ms ease;
     text-decoration: none;
     box-shadow: 0px 0px 5px;
-    margin-bottom: 25px;
 }
 header .read-more:hover{
     background-color: var(--secondary-text-color);
@@ -354,74 +352,53 @@ footer a{
     color:#f06e04;
     transition: 1000ms ease;
 }
-@media(max-width:1024px){
+@media screen and (max-width: 576px){
     header .container{
-        margin-left: 0px;
-    }
-    header{
-        position: relative;
-    }
-    header img{
-        margin-top: 150px;
-        position: absolute;
-    }
-    .time{
-        position: absolute;
-        left: 0;
-        top: 10px;
+        font-size: 14px;
+        margin-top: 90px;
     }
     header h1{
-        font-size: 25px;
+        font-size: 30px;
     }
-    header h2{
-        font-size: 18px;
-    }
-    header p{
-        font-size: 16px;
+    header img{
+        position: absolute;
+        margin-left: -190px;
+        height: 30vw;
+        width: 30vw;
+        margin-top: 100px;
     }
     #project-section h2{
-        font-size: 2rem;
-        margin-top: 50px;
+        color:#ffffff;
+        font-size: 1.5rem;
+        margin-top: 10px;
     }
     details{
-        font-size: 11px;
+        font-size: 9px;
+    }
+    details summary h3{
+        font-size: 15px;
+    }
+    footer #at-symbole{
+        font-size: 107px;
+        margin-top: 180px;
+    }
+    .det{
+        margin-left: -450px;
+        font-size: 18px;
+    }
+    .Github{
+        margin-left: -450px;
+    }
+    header{
         overflow: hidden;
     }
     section{
-        position: relative;
         overflow: hidden;
-    }
-    .standort{
-        margin-left: 35px;
-        font-size: 28px;
-    }
-    .Github{
-        position: absolute;
-        left: 20px;
-        margin-top: 380px;
-        font-size: 25px;
     }
     footer{
         overflow: hidden;
     }
-    footer #grid-container{
-        position: relative;
-    }
-    footer #at-symbole{
-        position:absolute;
-        top: 200px;
-        font-size: 80px;
-        margin-left: 45px;
-    }
-}
-@media(max-width:1400px){
-    header img{
-        position:absolute;
-        right: 30px;
-        height: 30vw;
-        width: 30vw;
-    }
-    header .container{
-        margin-top: 150px;
+    summary{
+        overflow: hidden;
     }
 }
