@@ -362,10 +362,10 @@ footer a{
     }
     header img{
         position: absolute;
-        margin-left: -190px;
+        margin-left: -150px;
         height: 30vw;
         width: 30vw;
-        margin-top: 10px;
+        margin-top: 160px;
     }
     #project-section h2{
         color:#ffffff;
@@ -383,14 +383,11 @@ footer a{
         margin-top: 180px;
     }
     .det{
-        margin-left: -450px;
+        margin-left: -400px;
         font-size: 18px;
     }
     .Github{
-        margin-left: -450px;
-    }
-    header{
-        overflow: hidden;
+        margin-left: -550px;
     }
     section{
         overflow: hidden;
@@ -398,7 +395,18 @@ footer a{
     footer{
         overflow: hidden;
     }
-    summary{
+
+    .click_on_me{
+        margin-left: -1px;
         overflow: hidden;
+    }
+    .click_here{
+        margin-left: -0px;
+        margin-top: 13px;
+        overflow: hidden;
+    }
+    .time{
+        overflow: hidden;
+        margin-left: -220px;
     }
 }
