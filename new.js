@@ -1,5 +1,24 @@
 const summaries = document.querySelectorAll('#summary');
 const timeBox= document.querySelector('.time');
+const scrollRevealoption ={
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+};
+
+ScrollReveal().reveal("header h1", {
+    ...scrollRevealoption,
+});
+ScrollReveal().reveal("header h2", {
+    ...scrollRevealoption,
+    origin: "left",
+    delay: 1000,
+});
+ScrollReveal().reveal("header p", {
+    ...scrollRevealoption,
+    origin: "right",
+    delay: 1000,
+});
 
 
 setInterval(()=>{
