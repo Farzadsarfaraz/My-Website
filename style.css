@@ -31,6 +31,8 @@ header{
     flex-wrap: wrap-reverse;
     position: relative;
     height: 100vh;
+    background-color: rgb(148, 151, 148);
+    background-blend-mode: multiply;
 }
 header .container{
     display: flex;
