@@ -16,7 +16,7 @@ Html{
     scroll-behavior: smooth;
 }
 body{
-
+    font-family:"Inter", sans-serif;
     min-height: 100vh;
     background:#edfcff;
 }
@@ -25,26 +25,22 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 0 5px;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap-reverse;
-    position: relative;
     height: 100vh;
-    background-color: rgb(148, 151, 148);
-    background-blend-mode: multiply;
+    position: relative;
+    padding: 130px;
 }
 header .container{
     display: flex;
-
+    flex-direction:row-reverse ;
+    justify-content: center;
+    padding-top: 40px;
     }
 header img{
     height: 20vw;
     width: 20vw;
-    margin: 210px 44px;
     box-shadow: red 1px 1px 10px;
-    border-radius: 60%;
-    transition: 0.3s;
+    border-radius: 50%;
+    transition: 0.5s;
     animation: floatImg 4s ease-in-out infinite;
 }
 header img:hover{
@@ -60,7 +56,6 @@ header img:hover{
     }
 }
 header h1{
-    margin-top: 200px;
     font-size: 3rem;
     color:#ffffff;
 }
@@ -69,7 +64,6 @@ header h2{
     margin-top: 15px;
     margin-bottom: 15px;
     text-transform: uppercase;
-    font-weight:bold;
 }
 header p{
     color:rgb(255, 255, 255);
@@ -91,58 +85,76 @@ header .read-more:hover{
     color: white;
     font-size: 20px;
 }
-.bx-bxs-hand-right{
-    font-size: 22px;
-    color: white;
-    transition: 0.3s;
-    animation: floathand 4s ease-in-out infinite;
+.time{
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    font-size: 45px;
+    font-weight: bold;
+    width: 300px;
+    text-align: center;
+    color:#ffffff;
+    filter: blur(1px);
 }
 #skill-section{
     background-image: url(file.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 70vh;
     padding: 80px 20px 150px 20px;
-    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 100vh;
+}
+.click_here{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    text-shadow: 2px 3px 15px rgb(0, 185, 247);
+    transition: 1000ms ease;
+    text-align: center;
+}
+.click_here:hover{
+    color: #f06e04;
+    font-size: 20px;
 }
 #skill-section h2{
-    font-size: 3rem;
+    font-size:3rem;
     text-align: center;
-    color:#e5cccc;
+    color:#f2efef;
+    padding: 20px;
 }
 #skill-section .wrapper{
-    margin-top: 60px;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 .skill-container{
-    width: 400px;
+    width: 450px;
     max-width: 100%;
-    box-shadow: red 1px 1px 5px;
-    border-top: none;
+    background-color: rgba(144, 141, 141, 0.3);
+    background-blend-mode: multiply;
 }
 .skill-container h3{
     text-align: center;
-    box-shadow: 1px 1px 90px;
     text-transform: uppercase;
     padding: 15px 0;
-    color:#a98e8e;
-}
-.skill-container ul{
-    margin: 10px 0;
+    color:#f90000;
 }
 .skill-container li{
-    padding: 5px;
+    padding: 6px;
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
 }
 .skill-container ul progress{
-    accent-color: rgb(0, 166, 255);
-    font-size:larger;
+    accent-color: rgb(239, 36, 0);
+    font-size: 22px;
     font-weight: bold;
+
 }
 #project-section{
     background-image: url(top-view-workspace-with-agenda-pens.jpg);
@@ -150,17 +162,19 @@ header .read-more:hover{
     background-position: center;
     background-size: cover;
     padding: 60px 10px;
-    min-height: 85vh;
+    min-height: 100vh;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #project-section h2{
     color:#ffffff;
     font-size: 3rem;
-    text-align: center;
-    margin-bottom: 45px;
-    margin-top: 0;
+    padding: 25px;
 }
 details{
-    margin: 20px auto;
     width:850px;
     max-width: 100%;
     box-shadow: 0px 1px 3px;
@@ -168,6 +182,9 @@ details{
     border-left: #d52c3a solid 10px;
     border-bottom-left-radius: 25px;
     color:#ffffff;
+    padding: 5px;
+    margin-top: 15px;
+    flex-wrap: wrap;
 }
 details summary{
     display: flex;
@@ -193,222 +210,138 @@ details h3{
 }
 details .text-container{
     padding: 30px;
-    padding-top: 0;
 }
-footer{
-    background-image: url(at.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: rgb(255, 255, 255);
-    color: #fdf0f0;
-    padding: 60px 20px;
-    height: 650px;
-}
-footer #grid-container{
-    margin: 110px 90px;
-    width: 1000px;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    gap: 200px;
-    
-}
-footer #at-symbole{
-    font-size: 200pt;
-    color:#ffffff;
-    transition: 0.3s;
-    animation: floatat 4s ease-in-out infinite;
-}
-@keyframes floatat {
-0%,
-100%{
-    transform: translateX(0);
-}
-50% {
-    transform: translateX(-2.4rem);
-}
-}
-footer h3{
-    margin-top: 50px;
-    font-size: 2rem;
-}
-footer a{
-    margin-top: 5px;
-    display: inline-block;
-    color:#f8f9ff;
-    text-decoration: none;
-}
-.click_here{
-    color:rgb(255, 255, 255);
-    position:absolute;
-    margin-left: 620px;
-    margin-top: 70px;
-    text-decoration: none;
-    padding: 5px;
-    border-radius: 20px;
-    box-shadow: 1px 1px 3px #ffffff;
-    text-shadow: 2px 3px 15px rgb(0, 0, 0);
-    font-weight: bold;
-    transition: 1000ms ease;
-}
-.click_here2{
-    position:absolute;
-    text-decoration: none;
-    padding: 15px;
-    transition: 1000ms ease;
-    right: 50px;
-    border-radius: 3px;
-    font-size: 28px;
-    font-weight: bold;
-}
-.click_here2:hover{
-    color: #000000;
-    font-size: 20px;
-    }
-.click_here:hover{
-    color: #f06e04;
-    font-size: 20px;
-}
-
 .click_on_me{
     color:rgb(255, 255, 255);
-    position:absolute;
-    margin-left: 600px;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     border-radius: 35px;
-    box-shadow: 1px 1px 5px #ffffff;
-    text-shadow: 2px 3px 15px rgb(0, 0, 0);
-    font-weight: bold;
     transition: 1000ms ease;
+    text-shadow: 2px 3px 15px rgb(0, 185, 247);
 
 }
 .click_on_me:hover{
     color: #f06e04;
     font-size: 20px;
 }
-.myemail{
-    transition: 500ms ease;
-    margin-top: 15px;
-    font-size: 35px;
+footer{
+    background-image: url(at.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
-.myemail:hover{
-    color: #f06e04;
-    font-size: 35px;
-    transform: rotate(360deg);
-}
-.mynum{
-    transition: 500ms ease;
-    margin: 15px 55px;
-    font-size: 35px;
-}
-.mynum:hover{
-    border-radius: 20px;
-    color: #f06e04;
-    font-size: 35px;
-    transform:rotate(45deg);
-}
-.standort{
-    transition: 500ms ease;
-    margin-top: 15px;
-    font-size: 35px;
-    margin-left: 50px;
-}
-.standort:hover{
-    color: #f06e04;
-    font-size: 35px;
-    transform: rotate(360deg);
-}
-.Github{
-    transition: 500ms ease;
-    margin-top: 85px;
-    font-size: 55px;
-    margin-left: 40px;
-}
-.Github:hover{
-    color: #f06e04;
-    font-size: 45px;
-    transform: rotate(360deg);
-
-}
-.time{
-    position: absolute;
-    top: 90px;
-    left: 250px;
-    padding: 30px;
-    font-size: 45px;
-    font-weight: bold;
-    width: 300px;
+footer #grid-container{
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    color:#ffffff;
-    filter: blur(1px);
+    gap: 105px;
+    padding-top: 35px;
+    overflow: hidden;
+}
+.det{
+    display: flex;
+    justify-content: space-around;
+}
+.det a{
+    color: white;
+}
+#at_symbole{
+    font-size: 150px;
+    transition: 0.3s;
+    animation: floatat 15s ease-in-out infinite;
+}
+@keyframes floatat {
+0%,
+100%{
+    transform: translateX(20rem);
+}
+50% {
+    transform: translateX(-20.4rem);
+}
 }
 .social{
-    margin-top: 200px;
-    margin-left: 50px;
-    font-size: 25px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 35px;
+    padding: 60px;
+}
+.social a{
+    color: white;
 }
 .social a:hover{
     font-size: 30px;
     color:#f06e04;
     transition: 1000ms ease;
 }
-@media screen and (max-width: 576px){
-    header .container{
-        font-size: 14px;
-        margin-top: 90px;
+.CV{
+    text-decoration: none;
+    transition: 1000ms ease;
+    font-size: 28px;
+    font-weight: bold;
+}
+.CV:hover{
+    color: #000000;
+    font-size: 20px;
     }
-    header h1{
-        font-size: 30px;
+    .myemail{
+        transition: 500ms ease;
+        font-size: 35px;
     }
-    header img{
-        position: absolute;
-        margin-left: -150px;
-        height: 30vw;
-        width: 30vw;
-        margin-top: 160px;
+    .myemail:hover{
+        color: #f06e04;
+        font-size: 35px;
+        transform: rotate(360deg);
     }
-    #project-section h2{
-        color:#ffffff;
-        font-size: 1.5rem;
-        margin-top: 10px;
+    .mynum{
+        transition: 500ms ease;
+        font-size: 35px;
     }
-    details{
-        font-size: 9px;
+    .mynum:hover{
+        border-radius: 20px;
+        color: #f06e04;
+        transform:rotate(45deg);
     }
-    details summary h3{
-        font-size: 15px;
+    .standort{
+        transition: 500ms ease;
+        font-size: 35px;
     }
-    footer #at-symbole{
-        font-size: 107px;
-        margin-top: 180px;
-    }
-    .det{
-        margin-left: -400px;
-        font-size: 18px;
+    .standort:hover{
+        color: #f06e04;
+        font-size: 35px;
+        transform: rotate(360deg);
     }
     .Github{
-        margin-left: -550px;
+        transition: 500ms ease;
+        font-size: 45px;
     }
-    section{
-        overflow: hidden;
+    .Github:hover{
+        color: #f06e04;
+        font-size: 45px;
+        transform: rotate(360deg);
     }
-    footer{
-        overflow: hidden;
+    @media(max-width: 380px ){
+            .skill-container li{
+                font-size: 16px;
+        }
+        #project-section h2{
+            font-size: 2rem;
+        }
+        details{
+            font-size: 13px;
+            padding: 0;
+            overflow: hidden;
+        }
+        details .number{
+            font-size: 15px;
+        }
+        details h3{
+            font-size: 1rem;
+        }
     }
-
-    .click_on_me{
-        margin-left: -1px;
-        overflow: hidden;
+    @media(max-width: 774px ){
+        details{
+            font-size: 15px;
+            overflow: hidden;
+        }
     }
-    .click_here{
-        margin-left: -0px;
-        margin-top: 13px;
-        overflow: hidden;
-    }
-    .time{
-        overflow: hidden;
-        margin-left: -220px;
-    }
-}
