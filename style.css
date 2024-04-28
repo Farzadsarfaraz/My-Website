@@ -171,7 +171,7 @@ header .read-more:hover{
 }
 #project-section h2{
     color:#ffffff;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 25px;
 }
 details{
@@ -202,7 +202,7 @@ details .number{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 details h3{
