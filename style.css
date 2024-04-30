@@ -329,7 +329,6 @@ footer #grid-container{
         header .container{
             flex-direction: column;
             gap: 10px;
-            border: red solid;
             height: 600px;
         }
         .first_child_container{
@@ -383,7 +382,6 @@ footer #grid-container{
         header .container{
             flex-direction: column;
             gap: 10px;
-            border: red solid;
             height: 600px;
         }
         .first_child_container{
@@ -438,7 +436,6 @@ footer #grid-container{
         header .container{
             flex-direction: column;
             gap: 10px;
-            border: red solid;
             height: 600px;
         }
         header h1{
