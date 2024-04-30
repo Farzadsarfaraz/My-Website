@@ -27,13 +27,16 @@ header{
     background-size: cover;
     height: 100vh;
     position: relative;
-    padding: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 header .container{
     display: flex;
     flex-direction:row-reverse ;
     justify-content: center;
     padding-top: 40px;
+    border: #d52c3a solid;
     }
 header img{
     height: 20vw;
