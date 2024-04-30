@@ -29,6 +29,7 @@ header{
     height: 100vh;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content:center;
 }
@@ -39,6 +40,10 @@ header .container{
     position: relative;
     width: 70%;
     padding: 15px;
+    }
+    .first_child_container{
+        width: 600px;
+
     }
 header img{
     height: 20vw;
@@ -89,15 +94,12 @@ header .read-more:hover{
     font-size: 14px;
 }
 .time{
-    position: absolute;
-    top: 60px;
-    left: 70px;
     font-size: 45px;
     font-weight: bold;
     width: 300px;
-    text-align: center;
     color:#ffffff;
-    filter: blur(1px);
+    filter: blur(2px);
+    padding: 10px;
 }
 #skill-section{
     background-image: url(file.jpg);
@@ -320,10 +322,72 @@ footer #grid-container{
         font-size: 45px;
         transform: rotate(360deg);
     }
-    @media( max-width: 400px){
+    @media( max-width: 900px){
+        header{
+            justify-content:right;
+        }
         header .container{
             flex-direction: column;
             gap: 10px;
+            border: red solid;
+            height: 600px;
+        }
+        .first_child_container{
+            width: 100%;
+        }
+        header h1{
+            font-size: 2.5rem;
+        }
+        header h2{
+            font-size: 1.5rem;
+        }
+        header p{
+            font-size: 1rem;
+        }
+        header img{
+            height: 35vw;
+            width: 35vw;
+        }
+        details h3{
+            font-size:1.2rem;
+        }
+        details .text-container{
+            width: 100%;
+    }
+    details .text-container li, p, pre{
+        font-size:17px;
+    }
+    details summary{
+        width: 100%;
+        gap: 5px;
+        padding: 15px;
+    }
+    details .number{
+        min-height: 40px;
+        min-width: 40px;
+    }
+    #project-section h2{
+        font-size: 1.5rem;
+    }
+    .wrapper .skill-container ul li{
+        font-size: 20px;
+    }
+    .wrapper .skill-container progress{
+        font-size: 18px;
+    }
+}
+    @media( max-width: 680px){
+        header{
+            justify-content:right;
+        }
+        header .container{
+            flex-direction: column;
+            gap: 10px;
+            border: red solid;
+            height: 600px;
+        }
+        .first_child_container{
+            width: 100%;
         }
         header h1{
             font-size: 1.5rem;
@@ -335,8 +399,8 @@ footer #grid-container{
             font-size: .8rem;
         }
         header img{
-            height: 45vw;
-            width: 45vw;
+            height: 35vw;
+            width: 35vw;
         }
         details{
             width: 100%;
@@ -366,6 +430,62 @@ footer #grid-container{
         font-size: 15px;
     }
     .wrapper .skill-container progress{
-        font-size: 15px;;
+        font-size: 15px;
+    }
+}
+
+    @media( max-width: 480px){
+        header .container{
+            flex-direction: column;
+            gap: 10px;
+            border: red solid;
+            height: 600px;
+        }
+        header h1{
+            font-size: 1.5rem;
+        }
+        header h2{
+            font-size: 1rem;
+        }
+        header p{
+            font-size: .8rem;
+        }
+        .first_child_container{
+            width: 100%;
+    
+        }
+        header img{
+            height: 35vw;
+            width: 35vw;
+        }
+        details{
+            width: 100%;
+        }
+        details h3{
+            font-size:.8rem;
+        }
+        details .text-container{
+            width: 100%;
+    }
+    details .text-container li, p, pre{
+        font-size:12px;
+    }
+    details summary{
+        width: 100%;
+        gap: 5px;
+        padding: 15px;
+    }
+    details .number{
+        min-height: 40px;
+        min-width: 40px;
+    }
+    #project-section h2{
+        font-size: 1.5rem;
+    }
+    .wrapper .skill-container ul li{
+        font-size: 15px;
+    }
+    .wrapper .skill-container progress{
+        font-size: 15px;
     }
 }
