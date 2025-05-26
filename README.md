@@ -1,1 +1,1 @@
-https://farzadsarfaraz.github.io/My-Website/My-projekt.html
+https://farzadsarfaraz.github.io/My-Website/
